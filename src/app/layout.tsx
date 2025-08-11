@@ -6,6 +6,7 @@ import Header from './components/Header';
 import { ProductProvider } from '@/context/ProductContext';
 import Banner from '@/herosectioncomp';
 import CasinoMenu from './components/casinomenu';
+import Teenpatti from './components/teenpatti';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <DataProvider>
             <Header />
             <Banner />
+            <Teenpatti product={undefined}/>
             <CasinoMenu />
             <ProductProvider>
               {children}

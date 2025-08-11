@@ -3,7 +3,7 @@ export default function CasinoMenu() {
     <div className="casino-menu">
       <h2>Casino Games</h2>
     <div style={{
-      background: '#fff',
+      background: '#383b6d',
       borderRadius: '12px',
       boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
       padding: '24px',

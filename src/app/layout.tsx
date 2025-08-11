@@ -4,6 +4,8 @@ import { AuthProvider } from '../context/AuthContext';
 import { DataProvider } from '../context/DataContext';
 import Header from './components/Header';
 import { ProductProvider } from '@/context/ProductContext';
+import Banner from '@/herosectioncomp';
+import CasinoMenu from './components/casinomenu';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -14,6 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AuthProvider>
           <DataProvider>
             <Header />
+            <Banner />
+            <CasinoMenu />
             <ProductProvider>
               {children}
             </ProductProvider>

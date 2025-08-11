@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/ziakshaiz/Desktop/nextjstest1/src/services/productService.ts"],"sourcesContent":["export async function fetchProducts() {\n  const res = await fetch('/api/products');\n  return res.json();\n}\n\nexport async function addProduct(product: { name: string; price: number }) {\n  const res = await fetch('/api/products', {\n    method: 'POST',\n    headers: { 'Content-Type':'application/json' },\n    body: JSON.stringify(product)\n  });\n  return res.json();\n}"],"names":[],"mappings":";;;;AAAO,eAAe;IACpB,MAAM,MAAM,MAAM,MAAM;IACxB,OAAO,IAAI,IAAI;AACjB;AAEO,eAAe,WAAW,OAAwC;IACvE,MAAM,MAAM,MAAM,MAAM,iBAAiB;QACvC,QAAQ;QACR,SAAS;YAAE,gBAAe;QAAmB;QAC7C,MAAM,KAAK,SAAS,CAAC;IACvB;IACA,OAAO,IAAI,IAAI;AACjB","debugId":null}}]
-}
